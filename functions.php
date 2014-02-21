@@ -54,7 +54,7 @@ function spring_song_theme_setup() {
 				'url'           => '%2$s/images/headers/spring.jpg',
 				'thumbnail_url' => '%2$s/images/headers/spring-thumb.jpg',
 				/* Translators: Header image description. */
-				'description'   => __( 'Christmas Joy default header', 'spring-song' )
+				'description'   => __( 'Spring Song default header', 'spring-song' )
 			)
 		)
 	);
