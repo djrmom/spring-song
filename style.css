@@ -55,13 +55,14 @@ h3,
 h4,
 h5,
 h5,
-#site-title
+#site-title,
 .entry h1,
 .entry h2,
 .entry h3,
 .entry h4,
 .entry h5 {
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Mystery Quest', cursive;
+	font-weight: 400;
 }
 
 .font-primary, body, input, textarea, .label-checkbox,

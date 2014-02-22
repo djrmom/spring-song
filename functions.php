@@ -89,6 +89,6 @@ function spring_song_color_primary( $hex ) {
 function spring_song_styles() {
 	wp_enqueue_style( 
 		'spring-song-fonts',
-		'//fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,400italic,700'
+		'//fonts.googleapis.com/css?family=Mystery+Quest:400'
 	);
 }
