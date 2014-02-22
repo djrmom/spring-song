@@ -17,3 +17,5 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 ## Changelog
 
 ### Version 1.0.0
+
+Initial release
