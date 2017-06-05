@@ -2,7 +2,7 @@
  * Theme Name: Spring Song
  * Theme URI: http://themehybrid.com/themes/spring-song
  * Description:  Spring is in the air!  Chase away winter with a spring song child theme for Stargazer.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Jenny Ragan
  * Author URI: http://jennyragan.com
  * Tags: one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
@@ -60,7 +60,8 @@ h5,
 .entry h2,
 .entry h3,
 .entry h4,
-.entry h5 {
+.entry h5,
+.font-headlines {
 	font-family: 'Mystery Quest', cursive;
 	font-weight: 400;
 }
@@ -96,11 +97,7 @@ li.ping, .comment-content, .clean-my-archives .day-duplicate .day,
 	border-color: #ffe6f9;
 }
 
-#menu-primary, #menu-primary .search-form > div, #footer,
-.audio-shortcode-wrap, .media-shortcode-extend .media-info,
-.media-info-toggle, .entry-content .media-info-toggle,
-.wp-audio-shortcode.mejs-container, .mejs-controls, .mejs-volume-button .mejs-volume-slider,
-.mejs-overlay-play .mejs-overlay-button::after, .mejs-time-rail .mejs-time-float {
+#menu-primary, #menu-primary .search-form > div, #footer {
 	background: #a4d7db;
 }
 
@@ -109,8 +106,11 @@ li.ping, .comment-content, .clean-my-archives .day-duplicate .day,
 .entry-content .media-info-toggle, .wp-audio-shortcode.mejs-container,
 .mejs-controls, .mejs-volume-button .mejs-volume-slider,
 .mejs-overlay-play .mejs-overlay-button::after, .mejs-time-rail .mejs-time-float {
-	background: #a4d7db;
 	color: #ffffff;
+}
+
+.search-form>div, #footer {
+	background: #a4d7db;
 }
 
 .display-header-text #header {
@@ -131,7 +131,12 @@ input[type="url"], input[type="week"], textarea, select {
 	color: #393d3e;
 }
 
-@media only screen and (max-width: 799px) {
+.widget-title > .wrap, #comments-number > .wrap, #reply-title > .wrap, .attachment-meta-title > .wrap {
+    text-transform: none;
+    font-weight: 400;
+}
+
+@media only screen and ( max-width: 1024px ) {
 	#menu-primary li a:hover, #menu-secondary li a:hover {
 		background: #a4d7db;
 		color: #ffffff;
@@ -140,9 +145,29 @@ input[type="url"], input[type="week"], textarea, select {
 		background: #ff80df;
 		border-color: #ff80df;
 	}
+	#menu-secondary .menu-toggle button {
+		color: rgba( 255, 255, 255, 0.75 );
+		background: #ff80df;
+		border-color: #ff80df;
+		font-weight: 600;
+	}
+	#menu-primary .menu-toggle button::before,
+	#menu-secondary .menu-toggle button::after {
+		font-weight: normal;
+	}
+    #menu-secondary .menu-toggle button:hover,
+    #menu-secondary .menu-toggle button:focus {
+        color: #ffffff;
+    }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and ( max-width: 540px ) {
+    #menu-secondary .menu-toggle button::before {
+        font-weight: normal;
+    }
+}
+
+@media only screen and ( min-width: 1025px ) {
 	#menu-primary ul ul li a:hover, #menu-secondary ul ul li a:hover {
 		background: #ff80df;
 		color: #ffffff;

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package    SpringSong
- * @version    1.0.0
+ * @version    1.0.1
  * @author     Jenny Ragan <jenny@jennyragan.com>
  * @copyright  Copyright (c) 2014, Jenny Ragan
  * @link       http://themehybrid.com/themes/spring-song

@@ -12,9 +12,13 @@ The following resources are not included with the theme but are external resourc
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
 
-2014 &copy; [Jenny Ragan](http://djrthemes.com).
+2014-2016 &copy; [Jenny Ragan](http://djrthemes.com).
 
 ## Changelog
+
+### Version 1.0.1
+
+CSS updates including changes to media player styles and mobile menus
 
 ### Version 1.0.0
 

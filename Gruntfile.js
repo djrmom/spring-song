@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         },
         copy: {
             build: {
-                    src: ['**', '!dist/**', '!readme.md', '!.gitignore', '!node_modules/**', '!Gruntfile.js', '!gruntfile.js', '!package.json'],
+                    src: ['**', '!releases/**', '!readme.md', '!.gitignore', '!node_modules/**', '!Gruntfile.js', '!gruntfile.js', '!package.json'],
                     dest: 'build/',
             }
         },
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
         compress: {
             build: {
                 options: {
-                    archive: 'dist/<%= pkg.name %>-<%= pkg.version %>.zip'
+                    archive: 'releases/<%= pkg.name %>-<%= pkg.version %>.zip'
                 },
                 expand: true,
                 cwd: 'build/',
